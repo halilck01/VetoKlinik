@@ -1,0 +1,1122 @@
+/* ! Genel Özellikler */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    overflow-x: hidden;
+}
+
+.column-25 {
+    width: 25%;
+}
+
+.column-50 {
+    width: 50%;
+}
+
+.column-75 {
+    width: 75%;
+}
+
+.column-100 {
+    width: 100%;
+}
+
+/* ! Nav Bar */
+nav {
+    display: flex;
+    background-color: lightpink;
+    justify-content: space-between;
+    width: 100%;
+    height: auto; 
+    max-height: 60px;
+}
+
+nav .left ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav .right ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav .left ul li a {
+    text-decoration: none;
+    margin: 30px;
+    color: purple;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+nav .right ul li a {
+    text-decoration: none;
+    margin: 30px;
+    color: purple;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.left ul li a:hover {
+    border-bottom: 2px solid purple;
+    color: darkslateblue;
+}
+
+.right ul li a:hover {
+    border-bottom: 2px solid purple;
+    color: darkslateblue;
+}
+
+/* ! Anasayfa/Main Div */
+
+.main {
+    border: 1px solid rgb(131, 131, 212);
+    height: 700px;
+    width: 90%;
+    margin: 3% auto;
+    box-shadow: 8px 5px 4px rgb(156, 109, 201);
+    border-top: hidden;
+    background-color: rgb(238, 221, 221);
+}
+
+.klinik-ad {
+    color: rgb(49, 6, 168);
+    animation: 2s animasyon infinite;
+    font-size: 60px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transition: 0.4s;
+}
+
+@keyframes animasyon {
+    0% {
+        color: rgb(197, 197, 197);
+    }
+    50% {
+        color: rgb(192, 24, 108);
+    }
+    100% {
+        color: rgb(197, 197, 197);
+    }
+}
+
+/* !Hakkımızda */
+
+.main-hakkımızda {
+    border: 2px solid skyblue;
+    margin: auto;
+    top: 20%;
+    height: 70%;
+    width: 66%;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+.column-100,
+.column-75,
+.column-50,
+.column-25 {
+    float: left;
+}
+
+.column-50 h2 {
+    font-size: 30px;
+    margin: 10% 10%;
+}
+
+.column-50 p {
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+ /* ! Logo */
+
+ .main-foto .logo {
+    border: 3px dashed rgb(96, 96, 192);
+    border-radius: 10%;
+    margin-top: 5%;
+    margin-left: 6%;
+    transition: 0.1s;
+    width: 80%;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* ! Randevu */
+
+.main2 {
+    height: 100%;
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    position: relative;
+    padding-inline: 5%;
+}
+
+.randevu {
+    border: 2px solid rgb(44, 41, 48);
+    height: 5%;
+    width: 40%;
+    text-align: center;
+    padding-top: 2%;
+    position: relative;
+    left: 8%;
+    background-color: rgb(232, 232, 238);
+    border-radius: 10px;
+}
+
+.randevu legend {
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+
+.randevu label {
+    font-size: 20px;
+}
+
+.randevu input {
+    padding: 2%;
+    background-color: rgb(206, 225, 240);
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.button1 {
+    padding: 3%;
+    margin-top: 5%;
+    text-align: center;
+    color: black;
+    background-color: rgb(201, 173, 182);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.button1:hover {
+    background-color: rgb(158, 191, 202);
+    color: white;
+}
+
+/* !Aşı */
+
+.arkaplan {
+    width: 40%;
+    height: 480px;
+    background: url("https://www.dogukanilac.com/uploads/ko%CC%88pek.jpg") no-repeat;
+    border: 2px solid black;
+    position: relative;
+    left: 15%;
+    margin-top: 5%;
+}
+
+.arkaplan .transbox {
+    width: 50%;
+    height: 50%;
+    margin: 20% auto;
+    background-color: white;
+    border:1px solid black;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+}
+
+.arkaplan .transbox p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.arkaplan .transbox a {
+    font-size: 30px;
+    margin-left: 20%;
+} 
+
+.arkaplan .transbox:hover {
+    animation: hover 3s infinite;
+}
+
+@keyframes hover {
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        background-color: rgb(129, 134, 196);
+        opacity: 0.8;
+      }
+}
+
+/* !Footer */
+
+footer {
+    width: 100%;
+    background-color: rgb(189, 176, 178);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-left {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+
+footer .footer-right {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+
+footer .footer-left li {
+   list-style-type: none;
+   margin: 20%;
+   text-align: center;
+}
+
+footer .footer-left li a:hover {
+    color: rgb(65, 31, 216) ;
+}
+
+footer .saatler {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+
+.aralık {
+    color: black;
+    height: auto;
+    border: 2px solid;
+    box-shadow: 8px 6px rgb(148, 97, 104);
+}
+
+/* ! 2. HTML Ekibimiz */
+
+/* !Ekip Fotoları */
+
+.name {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 50px;
+    color: crimson;
+}
+
+.ekip,
+.ekip2 {
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.kutu1 {
+    border: 2px solid black;
+    height: 50%;
+    width: 40%;
+    border-radius: 10px;
+    background: transparent;
+    animation: efekt 3s linear infinite;
+    box-shadow: 8px 5px 4px rgb(156, 109, 201);
+    text-align: center;
+}
+
+@keyframes efekt {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(182, 165, 199);
+    }
+
+    100% {
+        background-color: rgb(241, 235, 227);
+    }
+}
+
+.kurucu  {
+    height: 370px;
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+.kutu1 h3,
+.çalışan {
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 1px 3px pink;
+}
+
+/* !3. HTML */
+
+/* !Hizmetler */
+
+.html3 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: crimson;
+    margin-top: 5%;
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.content {
+    width: 100%;
+    height: 12em;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    box-shadow: 5px 2px 1px palevioletred;
+}
+
+.content h3 {
+    font-size: 25px;
+    color: rgb(39, 116, 119);
+    margin: auto;
+}
+
+.content p {
+    font-size: 20px;
+    margin: auto;
+}
+
+.column-25,
+.column-75 {
+    padding: 1%;
+}
+
+.column-25 .hizmet {
+    width: 100%;
+    height: 150px;
+}
+
+/* !4. HTML */
+
+/* !Sahiplen */
+
+.sahip {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: crimson;
+    margin-top: 1%;
+}
+
+.container h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content2 {
+    width: 100%;
+    height: auto;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px rgb(238, 231, 214);
+}
+
+.column-25 {
+    overflow: hidden;
+}
+
+.column-25 .morkie,
+.column-25 .tavşan,
+.column-25 .kedi,
+.column-25 .sfenks,
+.column-25 .kanarya,
+.column-25 .muhabbet,
+.column-25 .koyun,
+.column-25 .japon,
+.column-25 .hamster {
+    height: auto;
+    width: 100%;
+
+}
+
+.content2 ul {
+    text-align: center;
+    list-style-type: none;
+    font-size: 25px;
+    color: rgb(87, 70, 102);
+}
+
+.content2 img:hover {
+    transform: scale(1.2);
+}
+
+/* !5. HTML */
+
+/* !AŞI TAKVİMİ */
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.container2 .transbox2 table {
+    width: 50%;
+    height: 50%;
+    background: url("https://vetrehberi.com/wp-content/uploads/2020/10/kopeklerde-asi-programi.jpg") no-repeat;
+    border: 2px solid black;
+    background-size: cover;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
+.container2 .transbox2 h3,
+.container2 .transbox3 h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.container2 .transbox3 table {
+    width: 50%;
+    height: 50%;
+    background: url("https://blog.petibom.com/wp-content/uploads/2021/05/elinde-igne-olan-kedi.jpg") no-repeat;
+    border: 2px solid black;
+    background-size: cover;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
+.container2 .transbox2 table,
+.container2 .transbox3 table {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container2 .transbox2 li,
+.container2 .transbox3 li {
+    list-style-type: none;
+}
+
+.container2 .transbox2 table:hover,
+.container2 .transbox3 table:hover {
+    animation: aşı 5s;
+}
+
+@keyframes aşı {
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        box-shadow: 20px 20px 10px gray;
+        opacity: 0.8;
+      }
+}
+
+/* !6. HTML */
+
+/* !İletişim */
+
+.name2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: crimson;
+    margin-top: 3%;
+}
+
+.iletişim {
+    height: 100%;
+    width: 80%;
+    margin-left: 8%;
+    text-align: start;
+    position: relative;
+}
+
+.adres h2 {
+    font-size: 35px;
+}
+
+.adres p {
+    font-size: 30px;
+}
+
+mark {
+    background-color: rgb(204, 162, 162);
+}
+
+.line {
+    border: 1px solid rgb(207, 91, 91);
+    width: 60%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.column-50 img {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+}
+
+/* !Çalışma saatleri */
+
+.saat {
+    width: 100%;
+    text-align: center;
+    margin-top: 60%;
+}
+
+.saat .fa-solid {
+    margin-left: 10px;
+}
+
+.iletişim table, tr {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 4px 3px grey;
+}
+
+.column-50 td {
+    font-size: 25px;
+    border-bottom: 1px solid rgb(153, 134, 132);
+    padding: 1%;
+    background-color: rgb(238, 236, 233);
+}
+
+.column-50 .başlık {
+    font-size: 35px;
+    color: darkred;
+    border-bottom: none;
+}
+
+.column-50 iframe {
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+/* !Responsive */
+
+@media screen and (max-width:1200px) {
+    .main-foto .logo {
+        margin-top: 70px;
+    }
+
+    .arkaplan .transbox p,
+    .arkaplan .transbox a {
+        font-size: 25px;
+    }
+
+    .main2 .arkaplan {
+        object-fit: contain;
+        width: 50%;
+        margin-left: 3px;
+    }
+
+    .main2 .randevu {
+        width: 40%;
+    }
+
+    footer .footer-left,
+    footer .footer-right,
+    footer .saatler {
+        font-size: 23px;
+    }
+
+    .container2 .transbox2 table,
+    .container2 .transbox3 table {
+        object-fit: contain;
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .content p {
+        font-size: 18px;
+    }
+
+    .main-foto .logo {
+        margin-top: 100px;
+    }
+
+    .klinik-ad {
+        left: 30%;
+    }
+
+    footer .footer-left,
+    footer .footer-right,
+    footer .saatler {
+        font-size: 21px;
+    }
+
+    .arkaplan .transbox p,
+    .arkaplan .transbox a {
+        font-size: 22px;
+    }
+
+    .main2 .arkaplan {
+        background-position: 30%;
+        margin-left: 10px;
+    }
+
+    .main2 .randevu {
+        position: relative;
+        left: 10px;
+    }
+
+    .sahip h1 {
+        font-size: 40px;
+    }
+
+    .html3 {
+        font-size: 40px;
+    }
+
+    .name2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:917px) {
+    .column-50 p {
+        font-size: 18px;
+    }
+
+    .main-foto .logo {
+        margin-top: 130px;
+        overflow: hidden;
+    }
+
+    .sahip {
+        font-size: 30px;
+    }
+
+    .html3 {
+        font-size: 35px;
+    }
+
+    .container h3 {
+        font-size: 23px;
+    }
+
+    .name {
+        font-size: 35px;
+    }
+
+    .name2 {
+        font-size: 25px;
+    }
+
+    .container .iletişim .adres h2 {
+        font-size: 30px;
+    }
+
+    .container .iletişim .adres p {
+        font-size: 25px;
+    }
+
+    .iletişim .saat tr,
+    .iletişim .saat td {
+        font-size: 25px;
+    }
+
+    .container2 .transbox2 table,
+    .container2 .transbox3 table {
+        width: 80%;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav .left ul li a,
+    nav .right ul li a {
+        font-size: 18px;
+        margin-left: 5%;
+    }
+
+    .klinik-ad {
+        left: 30%;
+        font-size: 50px;
+    }
+    
+    footer .footer-left,
+    footer .footer-right,
+    footer .saatler {
+        font-size: 21px;
+    }
+
+    .randevu legend {
+        font-size: 25px;
+    }
+    
+    .randevu label {
+        font-size: 18px;
+    }
+
+    .html3,
+    .name {
+        font-size: 30px;
+    }
+    
+    .container h3 {
+        font-size: 25px;
+    }
+
+    .sahip h1 {
+        font-size: 35px;
+    }
+
+    .main-foto .logo {
+        margin-top: 150px;
+        overflow: hidden;
+    }
+
+    .content2 ul {
+        font-size: 20px;
+    }
+    
+    .main2 {
+        display: block;
+    }
+
+    .main2 .randevu {
+        width: 70%;
+        height: 70%;
+        position: relative;
+        left: 10%;
+    }
+
+    .main2 .arkaplan {
+        width: 80%;
+        height: 80%;
+        margin-bottom: 50px;
+        position: relative;
+        left: 10%;
+    }
+
+    .container2 .transbox2 table,
+    .container2 .transbox3 table {
+        background-position: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .container2 .transbox2 h3,
+    .container2 .transbox3 h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:742px) {
+    .content p {
+        font-size: 15px;
+    }
+
+    .html3,
+    .name {
+        font-size: 30px;
+    }
+
+    .container h3, 
+    .sahip {
+        font-size: 20px;
+    }
+}
+ 
+@media screen and (max-width:734px) {
+    .column-50 p {
+        font-size: 16px;
+    }
+
+    .column-50 h2 {
+        font-size: 20px;
+    }
+
+    nav .left ul li a,
+    nav .right ul li a {
+        margin: 25px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .main {
+        width: 95%;
+    }
+
+    .klinik-ad {
+        font-size: 40px;
+    }
+
+    nav .left ul li a,
+    nav .right ul li a {
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .column-100,
+    .column-50 {
+        width: 100%;
+   }
+
+   .main-foto .logo {
+        margin-top: 10px;
+        width: 45%;
+        margin-left: 120px;
+        overflow: hidden;
+   }
+
+    .main2 {
+        width: 100%;
+    }
+
+    .main2 .randevu {
+        width: 60%;
+        margin-left: 50px;
+        
+    }
+
+    .container .iletişim .veteriner {
+        width: 90%;
+    }
+
+    .ekip,
+    .ekip2 {
+        display: block;
+    }
+
+    .kutu1 {
+        width: 60%;
+        height: 280px;
+        text-align: center;
+        margin-top: 15%;
+        margin-left: 20%;
+    }
+
+    .kutu1 h3,
+    .çalışan,
+    .name2,
+    .randevu legend {
+        font-size: 20px;
+    }
+
+    .kurucu  {
+        height: 150px;
+        margin-top: 1%;
+    }
+
+    .column-50 iframe {
+        margin-top: 50px;
+    }
+
+    .html3,
+    .name {
+        font-size: 30px;
+    }
+
+    .container h3,
+    .sahip,
+    .content2 ul,
+    .randevu label {
+        font-size: 20px;
+    }
+
+    .iletişim .saat {
+        width: 80%;
+        margin: auto;
+    }
+
+    .iletişim .column-50 {
+        width: 80%;
+    }
+
+    .name2 {
+        font-size: 18px;
+    }
+
+    .container2 .transbox2 h3,
+    .container2 .transbox3 h3 {
+        font-size: 25px;
+    }
+
+    .container2 .transbox2 tr, td,
+    .container2 .transbox3 tr, td {
+        font-size: 20px;
+    }
+
+    footer .footer-left,
+    footer .footer-right,
+    footer .saatler {
+        width: 100%;
+    }
+
+    .container2 .transbox2 table,
+    .container2 .transbox3 table {
+        background-position: 45%; 
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .container2 .transbox3 table {
+        background-position: 20%;
+    }
+}
+
+@media screen and (max-width:545px) {
+    nav .left ul li a,
+    nav .right ul li a {
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .klinik-ad {
+        font-size: 30px;
+    }
+
+    footer .footer-left,
+    footer .footer-right,
+    footer .saatler {
+        padding: 3%;
+    }
+
+    .randevu legend {
+        font-size: 18px;
+    }
+    
+    .randevu label {
+        font-size: 14px;
+    }
+
+    .main .column-50 .logo {
+        margin-left: 100px;
+    }
+
+    .main2 .arkaplan {
+        width: 70%;
+    }
+
+    .column-50 td {
+        font-size: 18px;
+    }
+
+    .iletişim .saat .column-50 {
+        width: 100%;
+    }
+    
+    .column-50 .başlık {
+        font-size: 25px;
+    }
+    
+    .column-50 iframe {
+        width: 100%;
+        position: relative;
+        margin-left: 50px;
+    }
+
+    .container .iletişim .veteriner {
+        width: 450px;
+    }
+
+    .container2 .transbox2 table {
+        width: 80%;
+        background-position: center;
+    }
+
+    .container2 .transbox3 table {
+        width: 80%;
+    }
+
+    .main2 .arkaplan {
+        position: relative;
+        left: 60px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .content p {
+        font-size: 14px;
+    }
+
+    .randevu legend {
+        font-size: 15px;
+    }
+
+    nav {
+        display: block
+    }
+
+    .content2 .column-25 {
+        width: 100%;
+    }
+
+    .main .column-50 .logo {
+        margin-left: 80px;
+    }
+
+    .main2 .arkaplan p,
+    .main2 .arkaplan a {
+        font-size: 15px;
+    }
+
+    .iletişim .saat {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .iletişim .column-50 {
+        width: 100%;
+    }
+
+    .container2 .transbox3 table {
+        background-size: 1400px;
+        background-position: 25%;
+        background-color: rgb(230, 225, 218);
+    }
+
+    .container2 .transbox2 table {
+        background-position: 45%;
+        background-size: 1100px;
+        background-color: white;
+    }
+
+    .main2 .arkaplan {
+        object-fit: contain;
+        width: 90%;
+        position: relative;
+        left: 6px;
+    }
+
+    .column-50 iframe {
+        width: 100%;
+        position: relative;
+        margin-left: 14px;
+    }
+
+    .container .iletişim .veteriner {
+        width: 380px;
+    }
+}
